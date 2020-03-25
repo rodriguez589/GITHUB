@@ -1,0 +1,4 @@
+PS C:\Users\QUIQUE> cd Desktop
+PS C:\Users\QUIQUE\Desktop> cd 'Labosfunda'
+PS C:\Users\QUIQUE\Desktop\Labosfunda> git config --global user.email "00108720"
+PS C:\Users\QUIQUE\Desktop\Labosfunda> git config --global user.name "rodriguez589"
