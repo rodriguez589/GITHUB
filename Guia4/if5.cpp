@@ -13,10 +13,10 @@ int main()
     cout << "Ingrese una palabra:" << endl;
     cin >> palabra;
 
-    caracter1 = palabra.back();
-    caracter2 = palabra.front();
+    caracter1 = palabra. front();
+    caracter2 = palabra. back();
 
-    if (caracter1 = caracter2)
+    if (caracter1 == caracter2)
     {
         cout << "La palabra comenzo y finaliza con la misma letra." << endl;
     }
