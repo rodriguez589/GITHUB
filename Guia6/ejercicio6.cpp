@@ -1,59 +1,41 @@
 #include "iostream"
 
 using namespace std;
-
-void funcionx (int numero [], int t, int n) 
+void repeticion (int array[], int tm, int n) 
 {
-  
   int repetir = 0;
-  int numeroarreglo = 0;
-  for (int i = 0; i < t; i++)
+  for (int i = 0; i < tm; i++)
   {
     
-    if (n == numero[i])
-     {
-       repetir++;
-       numeroarreglo = numero[i];
-      }
-  }
+    if (n == array[i])
+    {
+      repetir++;
+    }
+     
+    }
 
-   cout <<"el numero" << numeroarreglo << "se repite" << " " << repetir << endl;
+  cout <<"el numero elegido: " << n << endl;
+  cout << "se repite en el arreglo:" << repetir << " vez/veces"<< endl;
+  
 }
 
-void funciony (int numero[], int t, int n)
-{
-  for(int i = 0; i < t; i++)
-   {
-     if (n == numero[i])
-     {
-       numero[i] = 0;
-      }
-        
-   }
-}
 
 int main()
 {
-  int numero[100], x, numerodeveces=0;
-  cout << endl;
+  int array[100], tm, numerodeveces=0;
+  int n;
 
-  cout <<"Veces que se repite un numero de dicho arreglo" << endl;
-  cout << "ingresar el numero de tama"<<char(164)<<"o del arreglo" << endl;
-  cin >> x;
-  for (int i= 0; i<x; i++)
+  cout << "Ingrese el tama"<<char(164)<<"o de su arreglo" << endl;
+  cin >> tm;
+  for (int i= 0; i<tm; i++)
   {
     cout << endl;
-    cout << i+1 << "digite un numero" << endl;
-    cin >> numero[i];
+    cout << "Ingrese el numero que sera parte de su arreglo" << endl;
+    cin >> array[i];
   }
-  for(int i = 0; i<x; i++)
-  {
-    int n=numero[i];
-     if(n != 0)
-    {
-      funcionx (numero, x, n);
-      funciony (numero, x, n);
-    }
-  }
+  cout << "Ingrese un numero para discriminar cuantas veces se repite en el arreglo"<<endl;
+  cin >> n;
+
+  repeticion (array, tm, n);
   return 0;
  }
